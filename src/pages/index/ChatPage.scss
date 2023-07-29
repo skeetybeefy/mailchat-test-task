@@ -1,0 +1,24 @@
+.chatPage {
+  display: flex;
+}
+
+.noMobileDevices {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+
+@media (width < 700px) {
+  .chatPage {
+    display: none
+  }
+
+  .noMobileDevices {
+    display: flex;
+  }
+}

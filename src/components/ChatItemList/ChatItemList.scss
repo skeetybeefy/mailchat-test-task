@@ -1,0 +1,15 @@
+.chatItemList {
+  width: 360px;
+  height: 100vh;
+  overflow-y: scroll;
+
+  border-right: 1px solid #201F1E1F;
+}
+
+.chatItemListHeader {
+  padding: 12px 16px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+}

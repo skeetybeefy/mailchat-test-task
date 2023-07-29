@@ -1,0 +1,21 @@
+.chatWindowHeader {
+  position: sticky;
+}
+
+.chatWindowInput {
+  position: sticky;
+
+  padding: 16px 24px;
+}
+
+.chatWindow {
+  height: 100vh;
+  width: calc(100vw - 360px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.messagesContainer {
+  flex: 1;
+}

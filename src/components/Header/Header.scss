@@ -1,0 +1,15 @@
+.chatHeader {
+  height: 64px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #201F1E1F;
+}
+
+.chatHeaderItem {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}

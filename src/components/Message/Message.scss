@@ -1,0 +1,11 @@
+.messageContainer {
+  display: grid;
+  grid-template-columns: 32px 470px;
+  gap: 8px;
+}
+
+.nameAndTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
