@@ -1,9 +1,21 @@
 .timeSpan {
-  display: inline-block;
-
   font-size: 12px;
   line-height: 9px;
   color: #605E5C;
+
+  &--message {
+    margin-left: 12px;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+
+  &--visible {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+  }
 }
 
 .readIcon {

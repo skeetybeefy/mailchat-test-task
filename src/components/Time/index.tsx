@@ -17,3 +17,12 @@ export const Time: FC<ITime> = ({ my, className, time }) => {
     </span>
   )
 }
+
+export const MessageTime: FC<ITime> = (props) => {
+  return (
+    <>
+      <Time className="timeSpan timeSpan--message timeSpan--hidden" {...props}></Time>
+      <Time className="timeSpan timeSpan--message timeSpan--visible" {...props}></Time>
+    </>
+  )
+}
