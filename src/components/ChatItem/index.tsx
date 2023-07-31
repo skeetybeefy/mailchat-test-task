@@ -5,6 +5,7 @@ import { Time } from "../Time"
 import { useAppDispatch } from "../../store"
 import { setSelectedChat } from "../../slices/selectedChatSlice"
 import { Chat } from "../../interface/Chat"
+import { getLocaleTimeStringFromUnixTimestamp } from "../../utils/getLocaleTimeStringFromUnixTimestamp"
 
 interface IChatItem {
   isSelected?: boolean,
@@ -24,7 +25,10 @@ export const ChatItem: FC<IChatItem> = ({ isSelected, chat }) => {
       <div className="chatData">
         <h4>{title.slice(0, 15)}</h4>
         <p>{last_message.message.slice(0, 15)}</p>
-        <Time className="chatItemTime"></Time>
+        <Time 
+          className="chatItemTime"
+          time={getLocaleTimeStringFromUnixTimestamp(last_message.created_at)}
+        />
       </div>
     </div>
   )

@@ -7,6 +7,7 @@ import { RootState, useAppDispatch } from "../../store"
 import { fetchMessages } from "../../slices/messagesSlice"
 import { Message } from "../Message"
 import { NewMessage } from "../NewMessage"
+import { getLocaleTimeStringFromUnixTimestamp } from "../../utils/getLocaleTimeStringFromUnixTimestamp"
 
 export const ChatWindow: FC = () => {
   const dispatch = useAppDispatch()
@@ -46,6 +47,7 @@ export const ChatWindow: FC = () => {
                 my={isMyMessage} 
                 name={[message.user.name, message.user.surname].join(" ")} 
                 text={message.message}
+                time={getLocaleTimeStringFromUnixTimestamp(message.created_at)}
                 key={message.id}
               />
               {isLastNewMessage && <NewMessage/>}
