@@ -13,7 +13,7 @@ export const Time: FC<ITime> = ({ my, className, time }) => {
   return (
     <span className={`timeSpan ${className ? className : ""}`}>
       <span>{time}</span>
-      {my && <img src={readIcon} className="readIcon"/>}
+      {my && <img src={readIcon} alt="" className="readIcon"/>}
     </span>
   )
 }

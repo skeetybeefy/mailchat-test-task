@@ -4,8 +4,7 @@ import { ChatItemList } from "../../components/ChatItemList";
 import { ChatWindow } from "../../components/ChatWindow";
 import "./ChatPage.scss"
 
-export const PageIndex: FC<IPage> = (props: IPage) => {
-    const { title } = props;
+export const PageIndex: FC<IPage> = () => {
     return (
       <>
         <div className="noMobileDevices">

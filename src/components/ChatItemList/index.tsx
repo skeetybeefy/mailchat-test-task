@@ -8,7 +8,7 @@ import { fetchChats } from "../../slices/chatsSlice"
 export const ChatItemList: FC = () => {
   const dispatch = useAppDispatch()
   const chatsState = useSelector((state: RootState) => state.chatsState)
-  const { isLoading, error, chats } = chatsState
+  const { chats } = chatsState
 
   useEffect(() => {
     dispatch(fetchChats())

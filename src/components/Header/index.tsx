@@ -11,7 +11,7 @@ export const Header: FC<IHeader> = ({ chatName, className }) => {
   return (
     <header className={`chatHeader ${className ? className : ""}`}>
       <div className="chatHeaderItem">
-        <img src={chatIcon}></img>
+        <img src={chatIcon} alt=""></img>
         <h3>{chatName}</h3>
       </div>
     </header>

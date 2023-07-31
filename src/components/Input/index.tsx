@@ -13,10 +13,10 @@ export const Input: FC<IInput> = ({ className }) => {
       <div contentEditable className="chatInput" placeholder="Type message" /> 
       <div className="actionsContainer">
         <div className="attachIcon iconContainer">
-          <img src={attachLogo}/>
+          <img src={attachLogo} alt="attachIcon"/>
         </div>
         <div className="iconContainer">
-          <img src={sendLogo}/>
+          <img src={sendLogo} alt="sendMessageIcon"/>
         </div>
       </div>
     </div>

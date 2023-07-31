@@ -1,4 +1,4 @@
-import {axiosInstance, wrapper} from "../../utils/wrapper";
+import {wrapper} from "../../utils/wrapper";
 import {URLS} from "../../constants/urls";
 import { ChatListResponse } from "../../interface/ChatList";
 import { MessageListResponse } from "../../interface/MessageList";

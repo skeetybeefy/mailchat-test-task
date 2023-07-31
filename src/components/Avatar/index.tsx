@@ -9,7 +9,7 @@ export const Avatar: FC<IAvatar> = (props: IAvatar) => {
 
     return (
         <div className={className}>
-            {!invisible && <img src={src} />}
+            {!invisible && <img src={src} alt="Avarar of the user"/>}
         </div>
     )
 }
