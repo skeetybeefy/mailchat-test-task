@@ -2,9 +2,9 @@
   position: relative;
   height: 72px;
   padding: 12px 16px;
-  display: flex;
+  display: grid;
   gap: 16px;
-  align-items: center;
+  grid-template-columns: 48px auto;
 
   cursor: pointer;
 
@@ -31,8 +31,25 @@
   font-size: 15px;
 }
 
-.chatItemTime {
-  position: absolute;
-  top: 20px;
-  right: 16px;
+.chatTopRow {
+  display: grid;
+  grid-template-columns: auto 34px;
+  align-items: center;
+}
+
+.chatTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chatLastMsg {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  color: #605E5C;
 }

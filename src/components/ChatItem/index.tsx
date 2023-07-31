@@ -24,12 +24,13 @@ export const ChatItem: FC<IChatItem> = ({ isSelected, chat, avatarSrc }) => {
     >
       <Avatar size="md" src={avatarSrc}></Avatar>
       <div className="chatData">
-        <h4>{title.slice(0, 15)}</h4>
-        <p>{last_message.message.slice(0, 15)}</p>
-        <Time 
-          className="chatItemTime"
+        <div className="chatTopRow">
+          <h4 className="chatTitle">{title}</h4>
+          <Time 
           time={getLocaleTimeStringFromUnixTimestamp(last_message.created_at)}
         />
+        </div>
+        <p className="chatLastMsg">{last_message.message}</p>
       </div>
     </div>
   )
