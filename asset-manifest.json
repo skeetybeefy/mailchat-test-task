@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/mailchat-test-task/static/css/main.22111e27.css",
+    "main.js": "/mailchat-test-task/static/js/main.5518515d.js",
+    "static/js/787.54ed6284.chunk.js": "/mailchat-test-task/static/js/787.54ed6284.chunk.js",
+    "static/media/Lato-BoldItalic.woff": "/mailchat-test-task/static/media/Lato-BoldItalic.443bd94393f9d73446c8.woff",
+    "static/media/Lato-Italic.woff": "/mailchat-test-task/static/media/Lato-Italic.251de5f48806485e4c5a.woff",
+    "static/media/Lato-BlackItalic.woff": "/mailchat-test-task/static/media/Lato-BlackItalic.c329db2ef5efedb87a8e.woff",
+    "static/media/Lato-Regular.woff": "/mailchat-test-task/static/media/Lato-Regular.77ca2742388f408c3be7.woff",
+    "static/media/Lato-Bold.woff": "/mailchat-test-task/static/media/Lato-Bold.ba3a83adcb94357fc42f.woff",
+    "static/media/Lato-Black.woff": "/mailchat-test-task/static/media/Lato-Black.efe7c183457352448e1e.woff",
+    "static/media/Lato-Light.woff": "/mailchat-test-task/static/media/Lato-Light.91308c0216b40aad1603.woff",
+    "static/media/Lato-Hairline.woff": "/mailchat-test-task/static/media/Lato-Hairline.8cc2841238f3d3276d9c.woff",
+    "static/media/Lato-BoldItalic.woff2": "/mailchat-test-task/static/media/Lato-BoldItalic.84607fcdf9af8784aa6e.woff2",
+    "static/media/Lato-Italic.woff2": "/mailchat-test-task/static/media/Lato-Italic.d9364c880eec4d4fea78.woff2",
+    "static/media/Lato-BlackItalic.woff2": "/mailchat-test-task/static/media/Lato-BlackItalic.3061b5464316d87f5dbc.woff2",
+    "static/media/Lato-Regular.woff2": "/mailchat-test-task/static/media/Lato-Regular.39ac38d8a27bed2a16e4.woff2",
+    "static/media/Lato-Bold.woff2": "/mailchat-test-task/static/media/Lato-Bold.ea8a923ec6d3ea7cf7bc.woff2",
+    "static/media/Lato-LightItalic.woff": "/mailchat-test-task/static/media/Lato-LightItalic.6876f3b2e440df8eab71.woff",
+    "static/media/Lato-Black.woff2": "/mailchat-test-task/static/media/Lato-Black.9280d87f151e453d884c.woff2",
+    "static/media/Lato-HairlineItalic.woff": "/mailchat-test-task/static/media/Lato-HairlineItalic.540ee912c7282b8bb151.woff",
+    "static/media/Lato-Light.woff2": "/mailchat-test-task/static/media/Lato-Light.7e323674c33b3939aba5.woff2",
+    "static/media/Lato-Hairline.woff2": "/mailchat-test-task/static/media/Lato-Hairline.4cf04805197605f0103e.woff2",
+    "static/media/Lato-LightItalic.woff2": "/mailchat-test-task/static/media/Lato-LightItalic.0ea7656d6a58e3f9853b.woff2",
+    "static/media/Lato-HairlineItalic.woff2": "/mailchat-test-task/static/media/Lato-HairlineItalic.bf1e0782291efebe06da.woff2",
+    "static/media/chat.svg": "/mailchat-test-task/static/media/chat.5293c5827cc2775a3c58c393e6bfefe9.svg",
+    "static/media/attach.svg": "/mailchat-test-task/static/media/attach.ac2becdc5c54cd73684e52228df97a8c.svg",
+    "static/media/read.svg": "/mailchat-test-task/static/media/read.5c59c7f6b82bbf4bc4d865d53656986a.svg",
+    "index.html": "/mailchat-test-task/index.html",
+    "static/media/send.svg": "/mailchat-test-task/static/media/send.2cdb37f9f0bbf2569f8b7a84facd4971.svg",
+    "main.22111e27.css.map": "/mailchat-test-task/static/css/main.22111e27.css.map",
+    "main.5518515d.js.map": "/mailchat-test-task/static/js/main.5518515d.js.map",
+    "787.54ed6284.chunk.js.map": "/mailchat-test-task/static/js/787.54ed6284.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22111e27.css",
+    "static/js/main.5518515d.js"
+  ]
+}
