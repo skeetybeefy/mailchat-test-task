@@ -8,6 +8,9 @@ import { fetchMessages } from "../../slices/messagesSlice"
 import { Message } from "../Message"
 import { NewMessage } from "../NewMessage"
 import { getLocaleTimeStringFromUnixTimestamp } from "../../utils/getLocaleTimeStringFromUnixTimestamp"
+import { getDateFromUnixTimestamp } from "../../utils/getDateFromUnixTimestamp"
+import { SystemMessage } from "../SystemMessage"
+import { getLocaleDateStringFromUnixTimestamp } from "../../utils/getLocaleDateStringFromUnixTimestamp"
 
 export const ChatWindow: FC = () => {
   const dispatch = useAppDispatch()
@@ -37,8 +40,10 @@ export const ChatWindow: FC = () => {
           const isLastMessage = index >= (array.length - 1)
           const isMyMessage = message.user.you
           const isLastNewMessage = !isLastMessage && message.is_new && array[index + 1].is_new === false
+          const isLastMessageOfTheDay = !isLastMessage && getDateFromUnixTimestamp(message.created_at) !== getDateFromUnixTimestamp(array[index + 1].created_at)
           const isNotMain = !isLastNewMessage && 
           !isLastMessage && 
+          !isLastMessageOfTheDay &&
           (message.user.id === array[index + 1].user.id);
           return (
             <>
@@ -51,9 +56,11 @@ export const ChatWindow: FC = () => {
                 key={message.id}
               />
               {isLastNewMessage && <NewMessage/>}
+              {isLastMessageOfTheDay && <SystemMessage messageText={getLocaleDateStringFromUnixTimestamp(message.created_at)}/>}
             </>
           )
         })}
+        {!isLoading && !error && messages.length > 0 && <SystemMessage messageText={getLocaleDateStringFromUnixTimestamp(messages.at(-1)!.created_at)}/>}
       </div>
       <Input className="chatWindowInput"></Input>
     </div>
