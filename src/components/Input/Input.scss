@@ -1,8 +1,21 @@
 .chatInput {
   padding: 10px 16px;
 
+  box-sizing: content-box;
+  max-height: 60px;
+  overflow-y: auto;
+
   border: 1px solid #A19F9D;
   border-radius: 4px;
+
+  line-height: 20px;
+  font-size: 15px;
+}
+
+[contenteditable]:empty::before{
+  content: attr(placeholder);
+  pointer-events: none;
+  color: #A19F9D;
 }
 
 .inputContainer {

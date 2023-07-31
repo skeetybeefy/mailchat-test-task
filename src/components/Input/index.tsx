@@ -10,11 +10,7 @@ interface IInput {
 export const Input: FC<IInput> = ({ className }) => {
   return (
     <div className={`inputContainer ${className ? className : ""}`}>
-      <input 
-        type="text" 
-        className="chatInput"
-        placeholder="Type message"
-      />
+      <div contentEditable className="chatInput" placeholder="Type message" /> 
       <div className="actionsContainer">
         <div className="attachIcon iconContainer">
           <img src={attachLogo}/>
