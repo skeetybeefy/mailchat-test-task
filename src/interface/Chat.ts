@@ -1,4 +1,4 @@
-import { Message } from "./Message";
+import { LastMessage } from "./LastMessage";
 import { User } from "./User";
 
 export interface Chat {
@@ -6,7 +6,7 @@ export interface Chat {
   title: string,
   avatar: string,
   private: boolean,
-  last_message: Message,
+  last_message: LastMessage,
   count_unread: number,
   users: Array<User>
 }

@@ -2,11 +2,13 @@ import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch } from 'react-redux'
 import chatsReducer from '../slices/chatsSlice'
 import selectedChatReducer from '../slices/selectedChatSlice'
+import messagesReducer from '../slices/messagesSlice'
 
 export const store = configureStore({
   reducer: {
-    chats: chatsReducer,
+    chatsState: chatsReducer,
     selectedChat: selectedChatReducer,
+    messagesState: messagesReducer,
   },
 })
 

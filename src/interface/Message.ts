@@ -1,8 +1,9 @@
+import { User } from "./User";
+
 export interface Message {
+  id: string,
   created_at: number,
-  user_id: string,
-  user_name: string,
-  user_surname: string,
-  you: boolean,
+  user: User,
   message: string,
+  is_new: boolean,
 }

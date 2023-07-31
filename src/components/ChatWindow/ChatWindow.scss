@@ -17,5 +17,12 @@
 }
 
 .messagesContainer {
+  padding: 20px 0;
+  
   flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  overflow-y: scroll;
 }

@@ -1,28 +1,31 @@
-import { FC } from "react"
+import { FC, useEffect } from "react"
 import "./ChatItemList.scss"
 import { ChatItem } from "../ChatItem"
-import { ChatList } from "../../interface/ChatList"
-import { Chat } from "../../interface/Chat"
 import { useSelector } from "react-redux"
-import { RootState } from "../../store"
+import { RootState, useAppDispatch } from "../../store"
+import { fetchChats } from "../../slices/chatsSlice"
 
-interface IChatItemList {
-  chats: ChatList | null,
-}
+export const ChatItemList: FC = () => {
+  const dispatch = useAppDispatch()
+  const chatsState = useSelector((state: RootState) => state.chatsState)
+  const { isLoading, error, chats } = chatsState
 
-export const ChatItemList: FC<IChatItemList> = ({ chats }) => {
+  useEffect(() => {
+    dispatch(fetchChats())
+  }, [dispatch])
+  
   const selectedChat = useSelector((state: RootState) => state.selectedChat)
+
   return (
     <div className="chatItemList">
       <div className="chatItemListHeader">
         <h3>All chats</h3>
       </div>
       {chats && chats.map(chat => (
-        <ChatItem 
-          chatName={chat.title.slice(0, 15)} 
-          lastMsgText={chat.last_message.message.slice(0, 15)}
-          id={chat.id}
-          isSelected={chat.id === selectedChat}
+        <ChatItem
+          chat={chat}
+          isSelected={chat.id === selectedChat.id}
+          key={chat.id}
         ></ChatItem>
       ))}
     </div>

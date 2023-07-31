@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 32px 470px;
   gap: 8px;
+
+  &--my {
+    margin-left: auto;
+  }
 }
 
 .nameAndTextContainer {

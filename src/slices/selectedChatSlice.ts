@@ -2,19 +2,19 @@ import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { Chat } from '../interface/Chat'
 
-const initialState: Chat['id'] = ""
+const initialState: Partial<Chat> = {}
 
 export const selectedChatSlice = createSlice({
   name: 'selectedChatSlice',
   initialState,
   reducers: {
-    setSelectedChatId: (_state, action: PayloadAction<Chat['id']>) => {
+    setSelectedChat: (_state, action: PayloadAction<Chat>) => {
       return action.payload
     },
   },
 })
 
 
-export const { setSelectedChatId } = selectedChatSlice.actions
+export const { setSelectedChat } = selectedChatSlice.actions
 
 export default selectedChatSlice.reducer
