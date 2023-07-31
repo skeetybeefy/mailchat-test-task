@@ -1,4 +1,5 @@
 .innerMessageContainer {
+  max-width: fit-content;
   padding: 8px 12px;
   border-radius: 4px;
   background-color: #F3F3F3;
@@ -6,4 +7,8 @@
 
 .myMessage {
   background-color: #407EC929;
+}
+
+.shiftedTop {
+  margin-top: -8px;
 }

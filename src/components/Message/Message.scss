@@ -1,10 +1,11 @@
 .messageContainer {
+  padding: 0 24px;
   display: grid;
-  grid-template-columns: 32px 470px;
+  grid-template-columns: 32px fit-content(470px);
   gap: 8px;
 
   &--my {
-    margin-left: auto;
+    align-self: flex-end;
   }
 }
 

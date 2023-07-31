@@ -16,8 +16,8 @@ export const Message: FC<IMessage> = ({ my, main, name, text }) => {
     <div className={`messageContainer ${my ? "messageContainer--my" : ""}`}>
       <Avatar size="sm" invisible={!main}></Avatar>
       <div className="nameAndTextContainer">
-        {main && <h4>{name}</h4>}
-        <InnerMessage my={!!my} text={text}/>
+        {main && !my && <h4>{name}</h4>}
+        <InnerMessage my={!!my} text={text} main={!!main}/>
       </div>
     </div>
   )
