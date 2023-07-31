@@ -24,6 +24,7 @@ export const ChatItemList: FC = () => {
       {chats && chats.map(chat => (
         <ChatItem
           chat={chat}
+          avatarSrc={chat.avatar}
           isSelected={chat.id === selectedChat.id}
           key={chat.id}
         ></ChatItem>

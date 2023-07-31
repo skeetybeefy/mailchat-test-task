@@ -52,6 +52,7 @@ export const ChatWindow: FC = () => {
                 my={isMyMessage} 
                 name={[message.user.name, message.user.surname].join(" ")} 
                 text={message.message}
+                avatarSrc={message.user.avatar}
                 time={getLocaleTimeStringFromUnixTimestamp(message.created_at)}
                 key={message.id}
               />

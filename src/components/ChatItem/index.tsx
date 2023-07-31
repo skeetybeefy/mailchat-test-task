@@ -9,10 +9,11 @@ import { getLocaleTimeStringFromUnixTimestamp } from "../../utils/getLocaleTimeS
 
 interface IChatItem {
   isSelected?: boolean,
-  chat: Chat
+  chat: Chat,
+  avatarSrc: string,
 }
 
-export const ChatItem: FC<IChatItem> = ({ isSelected, chat }) => {
+export const ChatItem: FC<IChatItem> = ({ isSelected, chat, avatarSrc }) => {
   const dispatch = useAppDispatch()
   const { title, last_message } = chat
 
@@ -21,7 +22,7 @@ export const ChatItem: FC<IChatItem> = ({ isSelected, chat }) => {
       className={`chatItem ${isSelected ? " chatItem--selected" : ""}`}
       onClick={() => dispatch(setSelectedChat(chat))}
     >
-      <Avatar size="md"></Avatar>
+      <Avatar size="md" src={avatarSrc}></Avatar>
       <div className="chatData">
         <h4>{title.slice(0, 15)}</h4>
         <p>{last_message.message.slice(0, 15)}</p>

@@ -10,12 +10,13 @@ interface IMessage {
   name: string,
   text: string,
   time: string,
+  avatarSrc: string,
 }
 
-export const Message: FC<IMessage> = ({ my, main, name, text, time }) => {
+export const Message: FC<IMessage> = ({ my, main, name, text, time, avatarSrc }) => {
   return (
     <div className={`messageContainer ${my ? "messageContainer--my" : ""} ${main ? "" : "shiftedTop"}`}>
-      <Avatar size="sm" invisible={!main}></Avatar>
+      <Avatar size="sm" invisible={!main || my} src={avatarSrc}></Avatar>
       <div className="nameAndTextContainer">
         {main && !my && <h4>{name}</h4>}
         <InnerMessage my={!!my} text={text} time={time}/>
