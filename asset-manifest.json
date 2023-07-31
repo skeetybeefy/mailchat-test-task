@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mailchat-test-task/static/css/main.22111e27.css",
-    "main.js": "/mailchat-test-task/static/js/main.5518515d.js",
+    "main.css": "/mailchat-test-task/static/css/main.4d34b98e.css",
+    "main.js": "/mailchat-test-task/static/js/main.545d14f8.js",
     "static/js/787.54ed6284.chunk.js": "/mailchat-test-task/static/js/787.54ed6284.chunk.js",
     "static/media/Lato-BoldItalic.woff": "/mailchat-test-task/static/media/Lato-BoldItalic.443bd94393f9d73446c8.woff",
     "static/media/Lato-Italic.woff": "/mailchat-test-task/static/media/Lato-Italic.251de5f48806485e4c5a.woff",
@@ -28,12 +28,12 @@
     "static/media/read.svg": "/mailchat-test-task/static/media/read.5c59c7f6b82bbf4bc4d865d53656986a.svg",
     "index.html": "/mailchat-test-task/index.html",
     "static/media/send.svg": "/mailchat-test-task/static/media/send.2cdb37f9f0bbf2569f8b7a84facd4971.svg",
-    "main.22111e27.css.map": "/mailchat-test-task/static/css/main.22111e27.css.map",
-    "main.5518515d.js.map": "/mailchat-test-task/static/js/main.5518515d.js.map",
+    "main.4d34b98e.css.map": "/mailchat-test-task/static/css/main.4d34b98e.css.map",
+    "main.545d14f8.js.map": "/mailchat-test-task/static/js/main.545d14f8.js.map",
     "787.54ed6284.chunk.js.map": "/mailchat-test-task/static/js/787.54ed6284.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22111e27.css",
-    "static/js/main.5518515d.js"
+    "static/css/main.4d34b98e.css",
+    "static/js/main.545d14f8.js"
   ]
 }
